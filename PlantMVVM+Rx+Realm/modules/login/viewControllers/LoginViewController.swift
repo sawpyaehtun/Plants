@@ -68,6 +68,11 @@ class LoginViewController: BaseViewController {
         viewModel.login()
     }
     
+    override func bindModel() {
+        super.bindModel()
+        viewModel.bindViewModel(in: self)
+    }
+    
     override func bindData() {
         super.bindData()
         tfEmail.rx.text.orEmpty.bind(to: viewModel.email).disposed(by: disposableBag)
