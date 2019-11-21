@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="PlantMVVM_Rx_Realm" customModuleProvider="target">
+            <connections>
+                <outlet property="imgMainPlantPhoto" destination="cZa-MD-nZr" id="ZN7-Y3-g0s"/>
+                <outlet property="tableViewPlants" destination="DE6-Rc-7J1" id="QBr-fx-s2H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewSearch" destination="lLj-7G-9sM" id="Oxf-4h-nYt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainPlantPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-MD-nZr" customClass="RoundedUIImageView" customModule="PlantMVVM_Rx_Realm" customModuleProvider="target">
+                    <rect key="frame" x="5" y="5" width="404" height="481"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="481" id="Ff9-Me-ZW6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DE6-Rc-7J1">
+                    <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLj-7G-9sM">
+                    <rect key="frame" x="54" y="327" width="348" height="54"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-sQ-m05" customClass="RoundedCardView" customModule="PlantMVVM_Rx_Realm" customModuleProvider="target">
+                            <rect key="frame" x="5" y="5" width="338" height="44"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yJY-6r-gYS">
+                                    <rect key="frame" x="12" y="8" width="30" height="28"/>
+                                    <color key="tintColor" red="0.91753935809999998" green="0.91394573450000005" blue="0.89803761240000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Jx4-9v-prv"/>
+                                        <constraint firstAttribute="height" constant="30" id="JyC-ie-bOE"/>
+                                    </constraints>
+                                </imageView>
+                                <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WO9-04-RYJ">
+                                    <rect key="frame" x="52" y="5" width="276" height="34"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.30025858274647887" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="WO9-04-RYJ" firstAttribute="leading" secondItem="yJY-6r-gYS" secondAttribute="trailing" constant="10" id="H5S-i6-H59"/>
+                                <constraint firstItem="WO9-04-RYJ" firstAttribute="top" secondItem="Eax-sQ-m05" secondAttribute="top" constant="5" id="dBO-N9-oIf"/>
+                                <constraint firstItem="yJY-6r-gYS" firstAttribute="centerY" secondItem="Eax-sQ-m05" secondAttribute="centerY" id="g0o-4v-Vtl"/>
+                                <constraint firstAttribute="bottom" secondItem="WO9-04-RYJ" secondAttribute="bottom" constant="5" id="ggF-Oo-1UP"/>
+                                <constraint firstAttribute="trailing" secondItem="WO9-04-RYJ" secondAttribute="trailing" constant="10" id="i8M-sl-Poy"/>
+                                <constraint firstItem="yJY-6r-gYS" firstAttribute="leading" secondItem="Eax-sQ-m05" secondAttribute="leading" constant="12" id="qaf-nF-hxg"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Eax-sQ-m05" firstAttribute="top" secondItem="lLj-7G-9sM" secondAttribute="top" constant="5" id="cFF-bz-7oU"/>
+                        <constraint firstItem="Eax-sQ-m05" firstAttribute="leading" secondItem="lLj-7G-9sM" secondAttribute="leading" constant="5" id="pTM-cZ-M0Y"/>
+                        <constraint firstAttribute="trailing" secondItem="Eax-sQ-m05" secondAttribute="trailing" constant="5" id="s0J-F4-Lk8"/>
+                        <constraint firstAttribute="height" constant="54" id="wHW-X7-NBk"/>
+                        <constraint firstAttribute="bottom" secondItem="Eax-sQ-m05" secondAttribute="bottom" constant="5" id="yoY-3t-gn3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DE6-Rc-7J1" secondAttribute="bottom" id="PVt-CH-HRu"/>
+                <constraint firstAttribute="trailing" secondItem="cZa-MD-nZr" secondAttribute="trailing" constant="5" id="Trt-Us-diO"/>
+                <constraint firstItem="lLj-7G-9sM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="327" id="WAy-rD-HoT"/>
+                <constraint firstItem="DE6-Rc-7J1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XFW-Af-TGW"/>
+                <constraint firstAttribute="trailing" secondItem="lLj-7G-9sM" secondAttribute="trailing" constant="12" id="ZRa-ZU-typ"/>
+                <constraint firstItem="DE6-Rc-7J1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="aCj-RL-can"/>
+                <constraint firstItem="lLj-7G-9sM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="54" id="pVG-ec-6ys"/>
+                <constraint firstItem="cZa-MD-nZr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="qVD-A4-NIE"/>
+                <constraint firstAttribute="trailing" secondItem="DE6-Rc-7J1" secondAttribute="trailing" id="uOx-46-Abe"/>
+                <constraint firstItem="cZa-MD-nZr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="yRx-Fh-pQD"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="mainPlantPhoto" width="5575" height="3717"/>
+    </resources>
+</document>

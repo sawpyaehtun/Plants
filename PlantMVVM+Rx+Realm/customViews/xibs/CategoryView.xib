@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryView" customModule="PanGestureRecogniserProject" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAlbum" destination="NC0-57-V1m" id="NsU-ts-edB"/>
+                <outlet property="btnColor" destination="Hpo-zk-ew0" id="Kii-zy-9ml"/>
+                <outlet property="btnOld" destination="gn4-jG-51p" id="xB6-pK-odD"/>
+                <outlet property="btnRecent" destination="Hx7-26-dmn" id="TV5-p4-gGV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="735" height="271"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GCL-tN-s5A">
+                    <rect key="frame" x="0.0" y="44" width="735" height="193"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HxZ-93-8ax">
+                            <rect key="frame" x="0.0" y="0.0" width="184" height="193"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx7-26-dmn" customClass="RoundedUIButton" customModule="PanGestureRecogniserProject" customModuleProvider="target">
+                                    <rect key="frame" x="5" y="5" width="174" height="183"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Recent">
+                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapBtn:" destination="-1" eventType="touchUpInside" id="5UU-vf-gat"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Hx7-26-dmn" firstAttribute="top" secondItem="HxZ-93-8ax" secondAttribute="top" constant="5" id="Oa8-aJ-nZx"/>
+                                <constraint firstAttribute="bottom" secondItem="Hx7-26-dmn" secondAttribute="bottom" constant="5" id="an0-Dm-ng5"/>
+                                <constraint firstItem="Hx7-26-dmn" firstAttribute="leading" secondItem="HxZ-93-8ax" secondAttribute="leading" constant="5" id="dRW-eb-gFX"/>
+                                <constraint firstAttribute="trailing" secondItem="Hx7-26-dmn" secondAttribute="trailing" constant="5" id="wFd-Ra-MYg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0X-no-YJW">
+                            <rect key="frame" x="184" y="0.0" width="183.5" height="193"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn4-jG-51p" customClass="RoundedUIButton" customModule="PanGestureRecogniserProject" customModuleProvider="target">
+                                    <rect key="frame" x="5" y="5" width="173.5" height="183"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Old">
+                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapBtn:" destination="-1" eventType="touchUpInside" id="5rc-Gw-lw8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="gn4-jG-51p" firstAttribute="leading" secondItem="s0X-no-YJW" secondAttribute="leading" constant="5" id="9Z8-pv-btS"/>
+                                <constraint firstAttribute="trailing" secondItem="gn4-jG-51p" secondAttribute="trailing" constant="5" id="9bi-4u-fAV"/>
+                                <constraint firstItem="gn4-jG-51p" firstAttribute="top" secondItem="s0X-no-YJW" secondAttribute="top" constant="5" id="TzK-D0-DtE"/>
+                                <constraint firstAttribute="bottom" secondItem="gn4-jG-51p" secondAttribute="bottom" constant="5" id="qxt-Qb-EXM"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0R0-rs-mo8">
+                            <rect key="frame" x="367.5" y="0.0" width="184" height="193"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpo-zk-ew0" customClass="RoundedUIButton" customModule="PanGestureRecogniserProject" customModuleProvider="target">
+                                    <rect key="frame" x="5" y="5" width="174" height="183"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Color">
+                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapBtn:" destination="-1" eventType="touchUpInside" id="sn2-fZ-kED"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Hpo-zk-ew0" firstAttribute="leading" secondItem="0R0-rs-mo8" secondAttribute="leading" constant="5" id="3py-Cx-fTJ"/>
+                                <constraint firstItem="Hpo-zk-ew0" firstAttribute="top" secondItem="0R0-rs-mo8" secondAttribute="top" constant="5" id="dVo-FZ-4aq"/>
+                                <constraint firstAttribute="trailing" secondItem="Hpo-zk-ew0" secondAttribute="trailing" constant="5" id="uDi-Fd-Vc6"/>
+                                <constraint firstAttribute="bottom" secondItem="Hpo-zk-ew0" secondAttribute="bottom" constant="5" id="xdK-yg-2g1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y74-E6-EMo">
+                            <rect key="frame" x="551.5" y="0.0" width="183.5" height="193"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-57-V1m" customClass="RoundedUIButton" customModule="PanGestureRecogniserProject" customModuleProvider="target">
+                                    <rect key="frame" x="5" y="5" width="173.5" height="183"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Album">
+                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapBtn:" destination="-1" eventType="touchUpInside" id="dHS-Sz-YXX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="NC0-57-V1m" secondAttribute="bottom" constant="5" id="EFf-Nc-qAY"/>
+                                <constraint firstAttribute="trailing" secondItem="NC0-57-V1m" secondAttribute="trailing" constant="5" id="bk2-Oc-3z4"/>
+                                <constraint firstItem="NC0-57-V1m" firstAttribute="leading" secondItem="y74-E6-EMo" secondAttribute="leading" constant="5" id="fD5-mm-w16"/>
+                                <constraint firstItem="NC0-57-V1m" firstAttribute="top" secondItem="y74-E6-EMo" secondAttribute="top" constant="5" id="nya-WO-Lub"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GCL-tN-s5A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4gN-EI-ugk"/>
+                <constraint firstItem="GCL-tN-s5A" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HV7-jq-wgw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GCL-tN-s5A" secondAttribute="bottom" id="WAU-rN-Wcp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GCL-tN-s5A" secondAttribute="trailing" id="X75-Lk-3wz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="370.28985507246381" y="-103.45982142857143"/>
+        </view>
+    </objects>
+</document>

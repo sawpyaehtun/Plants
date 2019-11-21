@@ -3,18 +3,75 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11E96052021523FD38B50723 /* Pods_PlantMVVM_Rx_RealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B646D8523C9C3B928B685C /* Pods_PlantMVVM_Rx_RealmTests.framework */; };
+		326D6ABFCB981288D2939C5D /* Pods_PlantMVVM_Rx_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440BAD6E31447E5691A162C3 /* Pods_PlantMVVM_Rx_Realm.framework */; };
+		D00496D72385773D007EA1FF /* LeftRoundedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00496D62385773D007EA1FF /* LeftRoundedCardView.swift */; };
+		D004971D238645FE007EA1FF /* RoundedUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D004971C238645FE007EA1FF /* RoundedUIImageView.swift */; };
+		D004971F238647DE007EA1FF /* RoundedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D004971E238647DE007EA1FF /* RoundedCardView.swift */; };
+		D004972523865E55007EA1FF /* RoundedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D004972423865E55007EA1FF /* RoundedUIButton.swift */; };
+		D004972E23866340007EA1FF /* CategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D004972D23866340007EA1FF /* CategoryView.xib */; };
+		D00497302386636A007EA1FF /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D004972F2386636A007EA1FF /* CategoryView.swift */; };
+		D0049734238663FF007EA1FF /* FavouritePlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0049732238663FF007EA1FF /* FavouritePlantCollectionViewCell.swift */; };
+		D0049735238663FF007EA1FF /* FavouritePlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0049733238663FF007EA1FF /* FavouritePlantCollectionViewCell.xib */; };
+		D0604FB02385249C008B3984 /* LeftRoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0604FAF2385249C008B3984 /* LeftRoundTextField.swift */; };
+		D0604FB223856E01008B3984 /* RightRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0604FB123856E01008B3984 /* RightRoundedButton.swift */; };
+		D07134B7237F069100074FE5 /* SlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07134B6237F069100074FE5 /* SlideTransition.swift */; };
+		D094A23A2386674300C39033 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094A2392386674300C39033 /* FavouriteViewModel.swift */; };
+		D095EC6A23867D2C00C3F5A1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095EC6923867D2C00C3F5A1 /* LoginViewModel.swift */; };
+		D095EC6C23867D7300C3F5A1 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095EC6B23867D7300C3F5A1 /* LoginProvider.swift */; };
+		D095EC6E2386807B00C3F5A1 /* UerVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095EC6D2386807B00C3F5A1 /* UerVO.swift */; };
+		D095EC702386827A00C3F5A1 /* CommonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095EC6F2386827A00C3F5A1 /* CommonManager.swift */; };
+		D0A6D56A238287E100C207D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D568238287E100C207D2 /* MainViewController.swift */; };
+		D0A6D56B238287E100C207D2 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A6D569238287E100C207D2 /* MainViewController.xib */; };
+		D0A6D56E2382891500C207D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D56D2382891500C207D2 /* LoginViewController.swift */; };
+		D0A6D5712382AE1500C207D2 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D5702382AE1500C207D2 /* MenuViewModel.swift */; };
+		D0A6D5742382B1C700C207D2 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D5722382B1C700C207D2 /* FavouriteViewController.swift */; };
+		D0A6D5752382B1C700C207D2 /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A6D5732382B1C700C207D2 /* FavouriteViewController.xib */; };
+		D0A6D5772383BEAD00C207D2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D5762383BEAC00C207D2 /* DBManager.swift */; };
+		D0A6D57A2383BED600C207D2 /* PlantRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D5792383BED600C207D2 /* PlantRO.swift */; };
+		D0A6D57C2383BF1C00C207D2 /* TipsRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D57B2383BF1C00C207D2 /* TipsRO.swift */; };
+		D0A6D57E2383BF2B00C207D2 /* UploadedUserRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D57D2383BF2B00C207D2 /* UploadedUserRO.swift */; };
+		D0A6D5802383C96B00C207D2 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D57F2383C96B00C207D2 /* Array+Extension.swift */; };
 		D0C7A2FA237D982100C4FFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A2F9237D982100C4FFFA /* AppDelegate.swift */; };
 		D0C7A2FC237D982100C4FFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A2FB237D982100C4FFFA /* SceneDelegate.swift */; };
-		D0C7A2FE237D982100C4FFFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A2FD237D982100C4FFFA /* ViewController.swift */; };
 		D0C7A301237D982100C4FFFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A2FF237D982100C4FFFA /* Main.storyboard */; };
 		D0C7A303237D982300C4FFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A302237D982300C4FFFA /* Assets.xcassets */; };
 		D0C7A306237D982300C4FFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A304237D982300C4FFFA /* LaunchScreen.storyboard */; };
 		D0C7A311237D982400C4FFFA /* PlantMVVM_Rx_RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A310237D982400C4FFFA /* PlantMVVM_Rx_RealmTests.swift */; };
 		D0C7A31C237D982400C4FFFA /* PlantMVVM_Rx_RealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A31B237D982400C4FFFA /* PlantMVVM_Rx_RealmUITests.swift */; };
+		D0C7A32F237DB30200C4FFFA /* PlantVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A32E237DB30200C4FFFA /* PlantVO.swift */; };
+		D0C7A331237DB38B00C4FFFA /* TipsVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A330237DB38B00C4FFFA /* TipsVO.swift */; };
+		D0C7A333237DB3E400C4FFFA /* UploadedUserVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A332237DB3E400C4FFFA /* UploadedUserVO.swift */; };
+		D0C7A337237DB56000C4FFFA /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A334237DB56000C4FFFA /* BaseTableViewCell.swift */; };
+		D0C7A338237DB56000C4FFFA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A335237DB56000C4FFFA /* BaseViewModel.swift */; };
+		D0C7A339237DB56000C4FFFA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A336237DB56000C4FFFA /* BaseViewController.swift */; };
+		D0C7A344237E657A00C4FFFA /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A342237E657A00C4FFFA /* PlantTableViewCell.swift */; };
+		D0C7A345237E657A00C4FFFA /* PlantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A343237E657A00C4FFFA /* PlantTableViewCell.xib */; };
+		D0C7A34A237E66BE00C4FFFA /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A348237E66BE00C4FFFA /* UICollectionView+Extension.swift */; };
+		D0C7A34B237E66BE00C4FFFA /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A349237E66BE00C4FFFA /* UITableView+Extension.swift */; };
+		D0C7A34E237E66FD00C4FFFA /* MainPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A34D237E66FD00C4FFFA /* MainPlantViewModel.swift */; };
+		D0C7A351237E678200C4FFFA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A350237E678200C4FFFA /* CardView.swift */; };
+		D0C7A353237E685E00C4FFFA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A352237E685E00C4FFFA /* UIView+Extension.swift */; };
+		D0C7A356237E6B6E00C4FFFA /* AlertWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A355237E6B6E00C4FFFA /* AlertWireFrame.swift */; };
+		D0C7A35A237E6DDE00C4FFFA /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A358237E6DDE00C4FFFA /* NetworkClient.swift */; };
+		D0C7A35D237E6E1F00C4FFFA /* MainPlantProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A35C237E6E1F00C4FFFA /* MainPlantProvider.swift */; };
+		D0C7A35F237E730100C4FFFA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A35E237E730100C4FFFA /* Data+Extension.swift */; };
+		D0C7A361237E897400C4FFFA /* UIBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A360237E897400C4FFFA /* UIBezierPath+Extension.swift */; };
+		D0C7A365237E8C3F00C4FFFA /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A364237E8C3F00C4FFFA /* RoundedImageView.swift */; };
+		D0C7A368237E94C800C4FFFA /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A366237E94C800C4FFFA /* PlantDetailViewController.swift */; };
+		D0C7A369237E94C800C4FFFA /* PlantDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A367237E94C800C4FFFA /* PlantDetailViewController.xib */; };
+		D0C7A372237EA87800C4FFFA /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A371237EA87800C4FFFA /* TipView.swift */; };
+		D0C7A374237EA89200C4FFFA /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A373237EA89200C4FFFA /* TipView.xib */; };
+		D0C7A376237EABEE00C4FFFA /* RoundedCornerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A375237EABEE00C4FFFA /* RoundedCornerImageView.swift */; };
+		D0C7A37A237EC41C00C4FFFA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A378237EC41C00C4FFFA /* MenuViewController.swift */; };
+		D0C7A37B237EC41C00C4FFFA /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A379237EC41C00C4FFFA /* MenuViewController.xib */; };
+		D0C7A37F237EC46000C4FFFA /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7A37D237EC46000C4FFFA /* MenuTableViewCell.swift */; };
+		D0C7A380237EC46000C4FFFA /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C7A37E237EC46000C4FFFA /* MenuTableViewCell.xib */; };
+		DDC6734A32B9C310C1304F8C /* Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E5CFAE9064AB70A2E5F11F /* Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +92,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11B646D8523C9C3B928B685C /* Pods_PlantMVVM_Rx_RealmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantMVVM_Rx_RealmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BB0BCAAA9159A2D65F3B7D /* Pods-PlantMVVM+Rx+RealmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantMVVM+Rx+RealmTests.release.xcconfig"; path = "Target Support Files/Pods-PlantMVVM+Rx+RealmTests/Pods-PlantMVVM+Rx+RealmTests.release.xcconfig"; sourceTree = "<group>"; };
+		440BAD6E31447E5691A162C3 /* Pods_PlantMVVM_Rx_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantMVVM_Rx_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E5CFAE9064AB70A2E5F11F /* Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D36073C293D566061764AF2 /* Pods-PlantMVVM+Rx+RealmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantMVVM+Rx+RealmTests.debug.xcconfig"; path = "Target Support Files/Pods-PlantMVVM+Rx+RealmTests/Pods-PlantMVVM+Rx+RealmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4240202B9122C746A239FB /* Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C275F27896FB40B01FEB3E83 /* Pods-PlantMVVM+Rx+Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantMVVM+Rx+Realm.debug.xcconfig"; path = "Target Support Files/Pods-PlantMVVM+Rx+Realm/Pods-PlantMVVM+Rx+Realm.debug.xcconfig"; sourceTree = "<group>"; };
+		D00496D62385773D007EA1FF /* LeftRoundedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRoundedCardView.swift; sourceTree = "<group>"; };
+		D004971C238645FE007EA1FF /* RoundedUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIImageView.swift; sourceTree = "<group>"; };
+		D004971E238647DE007EA1FF /* RoundedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCardView.swift; sourceTree = "<group>"; };
+		D004972423865E55007EA1FF /* RoundedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIButton.swift; sourceTree = "<group>"; };
+		D004972D23866340007EA1FF /* CategoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryView.xib; sourceTree = "<group>"; };
+		D004972F2386636A007EA1FF /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		D0049732238663FF007EA1FF /* FavouritePlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0049733238663FF007EA1FF /* FavouritePlantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritePlantCollectionViewCell.xib; sourceTree = "<group>"; };
+		D0604FAF2385249C008B3984 /* LeftRoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRoundTextField.swift; sourceTree = "<group>"; };
+		D0604FB123856E01008B3984 /* RightRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightRoundedButton.swift; sourceTree = "<group>"; };
+		D07134B6237F069100074FE5 /* SlideTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
+		D094A2392386674300C39033 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		D095EC6923867D2C00C3F5A1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D095EC6B23867D7300C3F5A1 /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		D095EC6D2386807B00C3F5A1 /* UerVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UerVO.swift; sourceTree = "<group>"; };
+		D095EC6F2386827A00C3F5A1 /* CommonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonManager.swift; sourceTree = "<group>"; };
+		D0A6D568238287E100C207D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D0A6D569238287E100C207D2 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D0A6D56D2382891500C207D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D0A6D5702382AE1500C207D2 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		D0A6D5722382B1C700C207D2 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		D0A6D5732382B1C700C207D2 /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
+		D0A6D5762383BEAC00C207D2 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		D0A6D5792383BED600C207D2 /* PlantRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRO.swift; sourceTree = "<group>"; };
+		D0A6D57B2383BF1C00C207D2 /* TipsRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRO.swift; sourceTree = "<group>"; };
+		D0A6D57D2383BF2B00C207D2 /* UploadedUserRO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedUserRO.swift; sourceTree = "<group>"; };
+		D0A6D57F2383C96B00C207D2 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		D0C7A2F6237D982100C4FFFA /* PlantMVVM+Rx+Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlantMVVM+Rx+Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7A2F9237D982100C4FFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0C7A2FB237D982100C4FFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0C7A2FD237D982100C4FFFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0C7A300237D982100C4FFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0C7A302237D982300C4FFFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C7A305237D982300C4FFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +139,36 @@
 		D0C7A317237D982400C4FFFA /* PlantMVVM+Rx+RealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlantMVVM+Rx+RealmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7A31B237D982400C4FFFA /* PlantMVVM_Rx_RealmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantMVVM_Rx_RealmUITests.swift; sourceTree = "<group>"; };
 		D0C7A31D237D982400C4FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C7A32E237DB30200C4FFFA /* PlantVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantVO.swift; sourceTree = "<group>"; };
+		D0C7A330237DB38B00C4FFFA /* TipsVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVO.swift; sourceTree = "<group>"; };
+		D0C7A332237DB3E400C4FFFA /* UploadedUserVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedUserVO.swift; sourceTree = "<group>"; };
+		D0C7A334237DB56000C4FFFA /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		D0C7A335237DB56000C4FFFA /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D0C7A336237DB56000C4FFFA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D0C7A342237E657A00C4FFFA /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
+		D0C7A343237E657A00C4FFFA /* PlantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantTableViewCell.xib; sourceTree = "<group>"; };
+		D0C7A348237E66BE00C4FFFA /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		D0C7A349237E66BE00C4FFFA /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		D0C7A34D237E66FD00C4FFFA /* MainPlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlantViewModel.swift; sourceTree = "<group>"; };
+		D0C7A350237E678200C4FFFA /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D0C7A352237E685E00C4FFFA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D0C7A355237E6B6E00C4FFFA /* AlertWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWireFrame.swift; sourceTree = "<group>"; };
+		D0C7A358237E6DDE00C4FFFA /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		D0C7A35C237E6E1F00C4FFFA /* MainPlantProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlantProvider.swift; sourceTree = "<group>"; };
+		D0C7A35E237E730100C4FFFA /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		D0C7A360237E897400C4FFFA /* UIBezierPath+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extension.swift"; sourceTree = "<group>"; };
+		D0C7A364237E8C3F00C4FFFA /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		D0C7A366237E94C800C4FFFA /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
+		D0C7A367237E94C800C4FFFA /* PlantDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantDetailViewController.xib; sourceTree = "<group>"; };
+		D0C7A371237EA87800C4FFFA /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		D0C7A373237EA89200C4FFFA /* TipView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
+		D0C7A375237EABEE00C4FFFA /* RoundedCornerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerImageView.swift; sourceTree = "<group>"; };
+		D0C7A378237EC41C00C4FFFA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D0C7A379237EC41C00C4FFFA /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		D0C7A37D237EC46000C4FFFA /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		D0C7A37E237EC46000C4FFFA /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		F55B0B07186024ABF5E33128 /* Pods-PlantMVVM+Rx+Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantMVVM+Rx+Realm.release.xcconfig"; path = "Target Support Files/Pods-PlantMVVM+Rx+Realm/Pods-PlantMVVM+Rx+Realm.release.xcconfig"; sourceTree = "<group>"; };
+		F56B50E3E9E66BC2B26C2FE8 /* Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.release.xcconfig"; path = "Target Support Files/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326D6ABFCB981288D2939C5D /* Pods_PlantMVVM_Rx_Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E96052021523FD38B50723 /* Pods_PlantMVVM_Rx_RealmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +192,179 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC6734A32B9C310C1304F8C /* Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		812034D1776C01DB9C1BB19B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				440BAD6E31447E5691A162C3 /* Pods_PlantMVVM_Rx_Realm.framework */,
+				64E5CFAE9064AB70A2E5F11F /* Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests.framework */,
+				11B646D8523C9C3B928B685C /* Pods_PlantMVVM_Rx_RealmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA876E8AA0E261ECED610A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C275F27896FB40B01FEB3E83 /* Pods-PlantMVVM+Rx+Realm.debug.xcconfig */,
+				F55B0B07186024ABF5E33128 /* Pods-PlantMVVM+Rx+Realm.release.xcconfig */,
+				BE4240202B9122C746A239FB /* Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.debug.xcconfig */,
+				F56B50E3E9E66BC2B26C2FE8 /* Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.release.xcconfig */,
+				7D36073C293D566061764AF2 /* Pods-PlantMVVM+Rx+RealmTests.debug.xcconfig */,
+				15BB0BCAAA9159A2D65F3B7D /* Pods-PlantMVVM+Rx+RealmTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0049731238663E0007EA1FF /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D00497372386640B007EA1FF /* xibs */,
+				D004973623866404007EA1FF /* swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		D004973623866404007EA1FF /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				D0049732238663FF007EA1FF /* FavouritePlantCollectionViewCell.swift */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		D00497372386640B007EA1FF /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D0049733238663FF007EA1FF /* FavouritePlantCollectionViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		D07134B8237F0C3600074FE5 /* favourite */ = {
+			isa = PBXGroup;
+			children = (
+				D094A2382386672500C39033 /* viewModels */,
+				D0049731238663E0007EA1FF /* cells */,
+				D0A6D5832383CFB800C207D2 /* viewControllers */,
+				D0A6D5822383CFAE00C207D2 /* views */,
+			);
+			path = favourite;
+			sourceTree = "<group>";
+		};
+		D07134B9237F132E00074FE5 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A37E237EC46000C4FFFA /* MenuTableViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		D07134BA237F133500074FE5 /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A37D237EC46000C4FFFA /* MenuTableViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		D094A2382386672500C39033 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D094A2392386674300C39033 /* FavouriteViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		D094A23B23866B7D00C39033 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				D094A23D23866B8A00C39033 /* viewControllers */,
+				D094A23C23866B8500C39033 /* views */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		D094A23C23866B8500C39033 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A367237E94C800C4FFFA /* PlantDetailViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D094A23D23866B8A00C39033 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A366237E94C800C4FFFA /* PlantDetailViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		D095EC6823867D1800C3F5A1 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D095EC6923867D2C00C3F5A1 /* LoginViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		D0A6D56C2382883E00C207D2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A2FF237D982100C4FFFA /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D0A6D56F2382AE0100C207D2 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D5702382AE1500C207D2 /* MenuViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		D0A6D5782383BEC200C207D2 /* ros */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D5792383BED600C207D2 /* PlantRO.swift */,
+				D0A6D57B2383BF1C00C207D2 /* TipsRO.swift */,
+				D0A6D57D2383BF2B00C207D2 /* UploadedUserRO.swift */,
+			);
+			path = ros;
+			sourceTree = "<group>";
+		};
+		D0A6D5812383CF7500C207D2 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D56D2382891500C207D2 /* LoginViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		D0A6D5822383CFAE00C207D2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D5732382B1C700C207D2 /* FavouriteViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D0A6D5832383CFB800C207D2 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D5722382B1C700C207D2 /* FavouriteViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
 		D0C7A2ED237D982100C4FFFA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +372,8 @@
 				D0C7A30F237D982400C4FFFA /* PlantMVVM+Rx+RealmTests */,
 				D0C7A31A237D982400C4FFFA /* PlantMVVM+Rx+RealmUITests */,
 				D0C7A2F7237D982100C4FFFA /* Products */,
+				BA876E8AA0E261ECED610A69 /* Pods */,
+				812034D1776C01DB9C1BB19B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +390,21 @@
 		D0C7A2F8237D982100C4FFFA /* PlantMVVM+Rx+Realm */ = {
 			isa = PBXGroup;
 			children = (
+				D0C7A36E237EA84500C4FFFA /* customViews */,
+				D0C7A357237E6DBF00C4FFFA /* network */,
+				D0C7A354237E6B3800C4FFFA /* managers */,
+				D0C7A34F237E675200C4FFFA /* components */,
+				D0C7A346237E658200C4FFFA /* utils */,
+				D0C7A32C237DB2C000C4FFFA /* models */,
+				D0C7A32B237DB2AF00C4FFFA /* modules */,
+				D0C7A32A237DB2A700C4FFFA /* providers */,
+				D0C7A329237DB2A000C4FFFA /* base */,
 				D0C7A2F9237D982100C4FFFA /* AppDelegate.swift */,
 				D0C7A2FB237D982100C4FFFA /* SceneDelegate.swift */,
-				D0C7A2FD237D982100C4FFFA /* ViewController.swift */,
-				D0C7A2FF237D982100C4FFFA /* Main.storyboard */,
 				D0C7A302237D982300C4FFFA /* Assets.xcassets */,
 				D0C7A304237D982300C4FFFA /* LaunchScreen.storyboard */,
 				D0C7A307237D982300C4FFFA /* Info.plist */,
+				D07134B6237F069100074FE5 /* SlideTransition.swift */,
 			);
 			path = "PlantMVVM+Rx+Realm";
 			sourceTree = "<group>";
@@ -128,6 +427,245 @@
 			path = "PlantMVVM+Rx+RealmUITests";
 			sourceTree = "<group>";
 		};
+		D0C7A329237DB2A000C4FFFA /* base */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A334237DB56000C4FFFA /* BaseTableViewCell.swift */,
+				D0C7A336237DB56000C4FFFA /* BaseViewController.swift */,
+				D0C7A335237DB56000C4FFFA /* BaseViewModel.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		D0C7A32A237DB2A700C4FFFA /* providers */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A35C237E6E1F00C4FFFA /* MainPlantProvider.swift */,
+				D095EC6B23867D7300C3F5A1 /* LoginProvider.swift */,
+			);
+			path = providers;
+			sourceTree = "<group>";
+		};
+		D0C7A32B237DB2AF00C4FFFA /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				D094A23B23866B7D00C39033 /* share */,
+				D07134B8237F0C3600074FE5 /* favourite */,
+				D0C7A377237EC3FF00C4FFFA /* menu */,
+				D0C7A33B237E647600C4FFFA /* main */,
+				D0C7A33A237DB5F700C4FFFA /* login */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		D0C7A32C237DB2C000C4FFFA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D5782383BEC200C207D2 /* ros */,
+				D0C7A32D237DB2CF00C4FFFA /* vos */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		D0C7A32D237DB2CF00C4FFFA /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A32E237DB30200C4FFFA /* PlantVO.swift */,
+				D0C7A330237DB38B00C4FFFA /* TipsVO.swift */,
+				D0C7A332237DB3E400C4FFFA /* UploadedUserVO.swift */,
+				D095EC6D2386807B00C3F5A1 /* UerVO.swift */,
+			);
+			path = vos;
+			sourceTree = "<group>";
+		};
+		D0C7A33A237DB5F700C4FFFA /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D095EC6823867D1800C3F5A1 /* viewModel */,
+				D0A6D5812383CF7500C207D2 /* viewControllers */,
+				D0A6D56C2382883E00C207D2 /* views */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		D0C7A33B237E647600C4FFFA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A33F237E654200C4FFFA /* viewModels */,
+				D0C7A33E237E653B00C4FFFA /* views */,
+				D0C7A33D237E653100C4FFFA /* cells */,
+				D0C7A33C237E652500C4FFFA /* veiwControllers */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		D0C7A33C237E652500C4FFFA /* veiwControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D568238287E100C207D2 /* MainViewController.swift */,
+			);
+			path = veiwControllers;
+			sourceTree = "<group>";
+		};
+		D0C7A33D237E653100C4FFFA /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A341237E655200C4FFFA /* swifts */,
+				D0C7A340237E654C00C4FFFA /* xibs */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		D0C7A33E237E653B00C4FFFA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D569238287E100C207D2 /* MainViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D0C7A33F237E654200C4FFFA /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A34D237E66FD00C4FFFA /* MainPlantViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		D0C7A340237E654C00C4FFFA /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A343237E657A00C4FFFA /* PlantTableViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		D0C7A341237E655200C4FFFA /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A342237E657A00C4FFFA /* PlantTableViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		D0C7A346237E658200C4FFFA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A347237E658E00C4FFFA /* extension */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		D0C7A347237E658E00C4FFFA /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A35E237E730100C4FFFA /* Data+Extension.swift */,
+				D0C7A348237E66BE00C4FFFA /* UICollectionView+Extension.swift */,
+				D0C7A349237E66BE00C4FFFA /* UITableView+Extension.swift */,
+				D0C7A352237E685E00C4FFFA /* UIView+Extension.swift */,
+				D0C7A360237E897400C4FFFA /* UIBezierPath+Extension.swift */,
+				D0A6D57F2383C96B00C207D2 /* Array+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		D0C7A34F237E675200C4FFFA /* components */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A364237E8C3F00C4FFFA /* RoundedImageView.swift */,
+				D0C7A350237E678200C4FFFA /* CardView.swift */,
+				D0C7A375237EABEE00C4FFFA /* RoundedCornerImageView.swift */,
+				D0604FAF2385249C008B3984 /* LeftRoundTextField.swift */,
+				D0604FB123856E01008B3984 /* RightRoundedButton.swift */,
+				D00496D62385773D007EA1FF /* LeftRoundedCardView.swift */,
+				D004971C238645FE007EA1FF /* RoundedUIImageView.swift */,
+				D004971E238647DE007EA1FF /* RoundedCardView.swift */,
+				D004972423865E55007EA1FF /* RoundedUIButton.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		D0C7A354237E6B3800C4FFFA /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				D095EC6F2386827A00C3F5A1 /* CommonManager.swift */,
+				D0A6D5762383BEAC00C207D2 /* DBManager.swift */,
+				D0C7A355237E6B6E00C4FFFA /* AlertWireFrame.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		D0C7A357237E6DBF00C4FFFA /* network */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A358237E6DDE00C4FFFA /* NetworkClient.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		D0C7A36E237EA84500C4FFFA /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A370237EA85600C4FFFA /* xibs */,
+				D0C7A36F237EA84F00C4FFFA /* swifts */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
+		D0C7A36F237EA84F00C4FFFA /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				D004972F2386636A007EA1FF /* CategoryView.swift */,
+				D0C7A371237EA87800C4FFFA /* TipView.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		D0C7A370237EA85600C4FFFA /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D004972D23866340007EA1FF /* CategoryView.xib */,
+				D0C7A373237EA89200C4FFFA /* TipView.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		D0C7A377237EC3FF00C4FFFA /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6D56F2382AE0100C207D2 /* viewModel */,
+				D0CF31EA237FAADD00DDDE1C /* views */,
+				D0CF31E9237FAACC00DDDE1C /* viewControllers */,
+				D0C7A37C237EC42900C4FFFA /* cells */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		D0C7A37C237EC42900C4FFFA /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D07134BA237F133500074FE5 /* swifts */,
+				D07134B9237F132E00074FE5 /* xibs */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		D0CF31E9237FAACC00DDDE1C /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A378237EC41C00C4FFFA /* MenuViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		D0CF31EA237FAADD00DDDE1C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7A379237EC41C00C4FFFA /* MenuViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +673,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0C7A320237D982400C4FFFA /* Build configuration list for PBXNativeTarget "PlantMVVM+Rx+Realm" */;
 			buildPhases = (
+				57720BB6E0DD4B0EE6BDA163 /* [CP] Check Pods Manifest.lock */,
 				D0C7A2F2237D982100C4FFFA /* Sources */,
 				D0C7A2F3237D982100C4FFFA /* Frameworks */,
 				D0C7A2F4237D982100C4FFFA /* Resources */,
+				1D8ACDB1A3CC61D86B1307A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +692,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0C7A323237D982400C4FFFA /* Build configuration list for PBXNativeTarget "PlantMVVM+Rx+RealmTests" */;
 			buildPhases = (
+				7BA9850293D6F4EA86A116CD /* [CP] Check Pods Manifest.lock */,
 				D0C7A308237D982400C4FFFA /* Sources */,
 				D0C7A309237D982400C4FFFA /* Frameworks */,
 				D0C7A30A237D982400C4FFFA /* Resources */,
@@ -170,9 +711,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0C7A326237D982400C4FFFA /* Build configuration list for PBXNativeTarget "PlantMVVM+Rx+RealmUITests" */;
 			buildPhases = (
+				17567099235D4AA54EA34C1C /* [CP] Check Pods Manifest.lock */,
 				D0C7A313237D982400C4FFFA /* Sources */,
 				D0C7A314237D982400C4FFFA /* Frameworks */,
 				D0C7A315237D982400C4FFFA /* Resources */,
+				520F80DA88C0E8B2C5C01707 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +775,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C7A374237EA89200C4FFFA /* TipView.xib in Resources */,
+				D004972E23866340007EA1FF /* CategoryView.xib in Resources */,
 				D0C7A306237D982300C4FFFA /* LaunchScreen.storyboard in Resources */,
+				D0C7A345237E657A00C4FFFA /* PlantTableViewCell.xib in Resources */,
+				D0049735238663FF007EA1FF /* FavouritePlantCollectionViewCell.xib in Resources */,
 				D0C7A303237D982300C4FFFA /* Assets.xcassets in Resources */,
+				D0A6D56B238287E100C207D2 /* MainViewController.xib in Resources */,
+				D0A6D5752382B1C700C207D2 /* FavouriteViewController.xib in Resources */,
 				D0C7A301237D982100C4FFFA /* Main.storyboard in Resources */,
+				D0C7A37B237EC41C00C4FFFA /* MenuViewController.xib in Resources */,
+				D0C7A380237EC46000C4FFFA /* MenuTableViewCell.xib in Resources */,
+				D0C7A369237E94C800C4FFFA /* PlantDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +806,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17567099235D4AA54EA34C1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D8ACDB1A3CC61D86B1307A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlantMVVM+Rx+Realm/Pods-PlantMVVM+Rx+Realm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlantMVVM+Rx+Realm/Pods-PlantMVVM+Rx+Realm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlantMVVM+Rx+Realm/Pods-PlantMVVM+Rx+Realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		520F80DA88C0E8B2C5C01707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests/Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57720BB6E0DD4B0EE6BDA163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlantMVVM+Rx+Realm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BA9850293D6F4EA86A116CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlantMVVM+Rx+RealmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0C7A2F2237D982100C4FFFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C7A2FE237D982100C4FFFA /* ViewController.swift in Sources */,
+				D07134B7237F069100074FE5 /* SlideTransition.swift in Sources */,
+				D0C7A351237E678200C4FFFA /* CardView.swift in Sources */,
+				D0C7A32F237DB30200C4FFFA /* PlantVO.swift in Sources */,
+				D0A6D5802383C96B00C207D2 /* Array+Extension.swift in Sources */,
+				D0604FB223856E01008B3984 /* RightRoundedButton.swift in Sources */,
+				D0A6D5712382AE1500C207D2 /* MenuViewModel.swift in Sources */,
+				D0C7A34A237E66BE00C4FFFA /* UICollectionView+Extension.swift in Sources */,
+				D0C7A372237EA87800C4FFFA /* TipView.swift in Sources */,
+				D095EC6A23867D2C00C3F5A1 /* LoginViewModel.swift in Sources */,
+				D00497302386636A007EA1FF /* CategoryView.swift in Sources */,
+				D0A6D56E2382891500C207D2 /* LoginViewController.swift in Sources */,
+				D0C7A353237E685E00C4FFFA /* UIView+Extension.swift in Sources */,
+				D095EC6C23867D7300C3F5A1 /* LoginProvider.swift in Sources */,
+				D0C7A344237E657A00C4FFFA /* PlantTableViewCell.swift in Sources */,
+				D0A6D5742382B1C700C207D2 /* FavouriteViewController.swift in Sources */,
+				D0C7A333237DB3E400C4FFFA /* UploadedUserVO.swift in Sources */,
+				D0A6D5772383BEAD00C207D2 /* DBManager.swift in Sources */,
+				D0A6D57C2383BF1C00C207D2 /* TipsRO.swift in Sources */,
+				D0049734238663FF007EA1FF /* FavouritePlantCollectionViewCell.swift in Sources */,
+				D0A6D56A238287E100C207D2 /* MainViewController.swift in Sources */,
+				D0C7A376237EABEE00C4FFFA /* RoundedCornerImageView.swift in Sources */,
+				D0C7A34E237E66FD00C4FFFA /* MainPlantViewModel.swift in Sources */,
+				D094A23A2386674300C39033 /* FavouriteViewModel.swift in Sources */,
+				D0C7A35A237E6DDE00C4FFFA /* NetworkClient.swift in Sources */,
+				D0C7A331237DB38B00C4FFFA /* TipsVO.swift in Sources */,
+				D0C7A356237E6B6E00C4FFFA /* AlertWireFrame.swift in Sources */,
+				D0C7A361237E897400C4FFFA /* UIBezierPath+Extension.swift in Sources */,
+				D004971F238647DE007EA1FF /* RoundedCardView.swift in Sources */,
+				D0C7A337237DB56000C4FFFA /* BaseTableViewCell.swift in Sources */,
+				D0C7A35F237E730100C4FFFA /* Data+Extension.swift in Sources */,
+				D095EC6E2386807B00C3F5A1 /* UerVO.swift in Sources */,
+				D0C7A37A237EC41C00C4FFFA /* MenuViewController.swift in Sources */,
+				D00496D72385773D007EA1FF /* LeftRoundedCardView.swift in Sources */,
+				D0C7A339237DB56000C4FFFA /* BaseViewController.swift in Sources */,
+				D095EC702386827A00C3F5A1 /* CommonManager.swift in Sources */,
+				D0C7A35D237E6E1F00C4FFFA /* MainPlantProvider.swift in Sources */,
+				D0C7A338237DB56000C4FFFA /* BaseViewModel.swift in Sources */,
 				D0C7A2FA237D982100C4FFFA /* AppDelegate.swift in Sources */,
 				D0C7A2FC237D982100C4FFFA /* SceneDelegate.swift in Sources */,
+				D0C7A37F237EC46000C4FFFA /* MenuTableViewCell.swift in Sources */,
+				D0C7A34B237E66BE00C4FFFA /* UITableView+Extension.swift in Sources */,
+				D0604FB02385249C008B3984 /* LeftRoundTextField.swift in Sources */,
+				D004972523865E55007EA1FF /* RoundedUIButton.swift in Sources */,
+				D0A6D57E2383BF2B00C207D2 /* UploadedUserRO.swift in Sources */,
+				D0C7A365237E8C3F00C4FFFA /* RoundedImageView.swift in Sources */,
+				D0A6D57A2383BED600C207D2 /* PlantRO.swift in Sources */,
+				D0C7A368237E94C800C4FFFA /* PlantDetailViewController.swift in Sources */,
+				D004971D238645FE007EA1FF /* RoundedUIImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +1132,7 @@
 		};
 		D0C7A321237D982400C4FFFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C275F27896FB40B01FEB3E83 /* Pods-PlantMVVM+Rx+Realm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +1150,7 @@
 		};
 		D0C7A322237D982400C4FFFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55B0B07186024ABF5E33128 /* Pods-PlantMVVM+Rx+Realm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +1168,7 @@
 		};
 		D0C7A324237D982400C4FFFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D36073C293D566061764AF2 /* Pods-PlantMVVM+Rx+RealmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +1190,7 @@
 		};
 		D0C7A325237D982400C4FFFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BB0BCAAA9159A2D65F3B7D /* Pods-PlantMVVM+Rx+RealmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +1212,7 @@
 		};
 		D0C7A327237D982400C4FFFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4240202B9122C746A239FB /* Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +1232,7 @@
 		};
 		D0C7A328237D982400C4FFFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56B50E3E9E66BC2B26C2FE8 /* Pods-PlantMVVM+Rx+Realm-PlantMVVM+Rx+RealmUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

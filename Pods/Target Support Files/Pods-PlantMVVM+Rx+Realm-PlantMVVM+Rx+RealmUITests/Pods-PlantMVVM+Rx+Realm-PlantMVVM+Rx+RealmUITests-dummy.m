@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests : NSObject
+@end
+@implementation PodsDummy_Pods_PlantMVVM_Rx_Realm_PlantMVVM_Rx_RealmUITests
+@end
